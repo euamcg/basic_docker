@@ -1,0 +1,11 @@
+services:
+  simple_server:
+    build: ./server/
+    image: simple_server
+    ports:
+      - "8468:8468"
+    container_name: simple_server
+  simple_client:
+    build: ./client/
+    image: simple_client
+    container_name: simple_client
